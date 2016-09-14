@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+	<title>Arthur Personal Blob | Find more about me</title>
+	<meta name="description" content="My personal blog">
+	<meta name="keywords" content="Blog Arthur">
+	<meta name="author" content="Arthur-Mihai Niculae">
+	<link rel="stylesheet" href="arthurDesign.css">
+	<script src="sidenav.js"></script>
+	<script src="homeSlideshow.js"></script>
+</head>
+
+<body>
+
+<!-- Navigation bar (At the very top) -->
+
+<!-- Sidebar -->
+<div id="mySidenav" class="sidenav">
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	<div class="img-container">
+		<img src="profile_image_1.jpg" class="avatar" style="width: 60%">
+	</div>
+	<a href="#login"
+		 onclick="document.getElementById('login').style.display='block'"> Login </a>
+	<a href="#About"
+		 onclick="document.getElementById('About').style.display='block'"> About </a>
+	<a href="#Contact"> Contact </a>
+</div>
+
+<div class="display-on-top">
+
+	<ul class="navbar display-gray-bg" id="myBlogNavbar">
+		<li>
+			<span style="font-size: 30px; cursor: pointer" onclick="changeState()">&#9776</span>
+		</li>
+		<li><a href="#homePhoto" class="padding-large"> HOME </a></li>
+		<li class="dropdown">
+			<a href="#Travels" class="drop-button padding-large"> TRAVELS </a>
+			<div class="dropdown-content padding-large display-gray-bg">
+				<a href="#LasVegas"> LasVegas </a>
+				<a href="#DenHaag"> Den Haag </a>
+				<a href="#Madeira"> Madeira </a>
+				<a href="#London"> London </a>
+			</div>
+		</li>
+		<li class="dropdown">
+			<a href="#ProgrammingLanguages" class="drop-button padding-large">
+				PROGRAMMING LANGUAGES </a>
+			<div class="dropdown-content padding-large display-gray-bg">
+				<a href="#Java"> Java </a>
+				<a href="#C/C++"> C/C++ </a>
+				<a href="#Python"> Python </a>
+				<a href="#Web"> HTML </a>
+				<a href="#Web"> CSS </a>
+				<a href="#Web"> JavaScript </a>
+			</div>
+		</li>
+		<li class="dropdown">
+			<a href="#Projects" class="drop-button padding-large"> PROJECTS </a>
+			<div class="dropdown-content padding-large display-gray-bg">
+				<a href="#ARM11EA"> ARM11 Emulator&Assembler </a>
+				<a href="#ARM11Game"> ARM11 Baremetal Game </a>
+				<a href="#Bitcoin"> Bitcoin </a>
+				<a href="#NASA"> Space Settlement Design Contest </a>
+			</div>
+		</li>
+		<li><a href="#Conferences" class="padding-large"> CONFERENCES </a></li>
+		<li class="dropdown">
+			<a href="#Courses" class="drop-button padding-large"> COURSES </a>
+			<div class="dropdown-content padding-large display-gray-bg">
+				<a href="#ImperialCourses"> Imperial Courses </a>
+				<a href="#3D"> 3D Printing </a>
+			</div>
+		</li>
+		<li><a href="#Contact" class="padding-large"> CONTACT </a></li>
+		<li class="hide-small">
+			<button class="login-btn padding-large"
+							onclick="document.getElementById('login').style.display='block'">
+				Login</button>
+
+			<div id="login" class="modal">
+
+				<form class="modal-content animate" action="action_page.php">
+					<div class="img-container">
+						<span
+							onclick="document.getElementById('login').style.display='none'"
+							class="modal-close-btn" title="Close Modal"> &times; </span>
+						<img src="welcome1.jpg" class="avatar">
+					</div>
+
+					<div class="modal-container">
+						<label><b> Username </b></label>
+						<input type="text" placeholder="Enter Username"
+									 name="uname" required class="modal-input">
+
+						<label><b> Password </b></label>
+						<input type="password" placeholder="Enter Password"
+									 name="psw" required class="modal-input">
+
+						<button type="submit" class="login-modal-btn"> Login </button>
+						<input type="checkbox" checked="checked"> Remember me
+					</div>
+
+					<div class="container" style="background-color: #f1f1f1">
+						<button type="button"
+										onclick="document.getElementById('login').style.display='none'"
+										class="cancel-btn"> Cancel </button>
+						<span class="psw"><a href="#">Forgot password? </a></span>
+					</div>
+				</form>
+			</div>
+		</li>
+	</ul>
+
+</div>
+
+<!-- About Website -->
+<div id="About" class="modal" style="padding: 30px;">
+	<div class="modal-content animate">
+		<div class="container">
+			<img src="aboutWebsite.jpg" style="width: 100%; height: 330px;">
+		</div>
+		<div class="container display-light-grey">
+			<h3 class="display-center"><b> Welcome to Arthur-Mihai Niculae's Blog!</b></h3>
+			<p class="display-center"> This is my personal Blog where you can find
+			information about skills, passions and knowledge. It includes interesting
+			topics like Conferences, Programming Languages and many other. If you
+				want to connect, then leave a message in the Contact section! </p>
+		</div>
+	</div>
+</div>
+
+<!-- First image and Welcome message -->
+<img id="homePhoto" class="bgimg1">
+
+<!-- Second image with My travels -->
+<div id="Travels" class="bgimg2 display-container">
+	<div class="display-middle padding-xlarge"
+			 style="white-space:nowrap;color:rgb(102, 157, 51);font-size: 250%"> MY TRAVELS
+	</div>
+</div>
+
+<!-- My travel entries -->
+<div class="display-light-grey">
+
+	<!-- Las Vegas & Den Haag -->
+	<!-- First entry blog(Las Vegas) -->
+	<div class="card margin display-white-bg">
+
+		<img id="LasVegas" src="LV_visiting.jpg" alt="LV" style="height:400px;width:49%;">
+		<img id="DenHaag" src="DenHaag.jpg" alt="Den Haag" style="height:400px;width:49%;">
+
+		<div class="container padding-8">
+			<div class="display-1half">
+				<h3><b> My visit to Las Vegas </b></h3>
+				<h5><span class="opacity"> May, 2014 </span></h5>
+
+				<div class="container">
+					<p> I will always remember my wonderful trip to a city like Las Vegas, back
+						in 2014. After the internation space conference in Los Angeles finished, me and some
+						friends went to visit LV for 2 days. It seemed like another world, something we will
+						never see in Europe. </p>
+					<p><button class="button display-on-left" onclick="alert('COMING SOON!')">
+						<b> READ MORE >> </b></button></p>
+					<p> <span class="padding-large display-on-right"><b> Comments </b>
+<span class="tag"> 0 </span></span></p>
+				</div>
+			</div>
+			<!-- Second entry blog (Den Haag) -->
+			<div class="display-2half">
+				<h3><b> My visit to Den Haag </b></h3>
+				<h5><span class="opacity"> July, 2016 </span></h5>
+
+				<div class="container">
+					<p> From my point of view this was one of the best trips I've had so far in my
+						life. It was fantastic being able to stay with my dear cousin and her lovely children
+						who truly impressed me from all perspective. I felt like I was part of the family and
+						learned a lot. It will definetly remain in my heart for the entire life. </p>
+					<p><button class="button display-on-left" onclick="alert('COMING SOON!')">
+						<b> READ MORE >> </b></button></p>
+					<p><span class="padding-large display-on-right"><b> Comments </b>
+<span class="tag"> 0 </span></span></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Madeira & London -->
+	<!-- Third entry blog(Madeira) -->
+	<div class="card margin display-white-bg">
+
+		<img id="Madeira" src="Madeira.jpg" alt="Madeira" style="height:400px;width:49%">
+		<img id="London" src="London.jpg" alt="London" style="height:400px;width:49%">
+
+		<div class="container padding-8">
+			<div class="display-1half">
+				<h3><b> My visit to Madeira </b></h3>
+				<h5><span class="opacity"> July, 2014 </span></h5>
+
+				<div class="container">
+					<p> Madeira is one of the most wonderful places I've ever seen in
+					my life. It is also special due to the fact it was a present for
+					my 18'th birthday. The island, landscapes are breathtaking. I was
+					completely shocked when I received a greetings card and champagne
+					for my birthday, from the hotel representatives. </p>
+					<p><button class="button display-on-left" onclick="alert('COMING SOON!')">
+						<b> READ MORE >> </b></button></p>
+					<p> <span class="padding-large display-on-right"><b> Comments </b>
+<span class="tag"> 0 </span></span></p>
+				</div>
+			</div>
+			<!-- Forth entry blog(London)-->
+			<div class="display-2half">
+				<h3><b> My visit to London </b></h3>
+				<h5><span class="opacity"> October, 2015 </span></h5>
+
+				<div class="container">
+					<p> Many times I consider that in another life I lived in London and
+					I always feel something special when I return to this magnificent city,
+					like it is part of me. In 2015, I managed to get accepted by Imperial
+					College London, which is in one of the most beautiful neighborhood in
+					Europe, making a dream come true. </p>
+					<p><button class="button display-on-left" onclick="alert('COMING SOON!')">
+						<b> READ MORE >> </b></button></p>
+					<p><span class="padding-large display-on-right"><b> Comments </b>
+<span class="tag"> 0 </span></span></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+<!-- End of travel entries -->
+
+<!-- Fourth image with Programming Languages -->
+<div id="ProgrammingLanguages" class="bgimg4 display-container">
+</div>
+
+<!-- First Grid of Programming Languages (Java) -->
+<div class="row-padding padding-64 container">
+	<div class="content">
+		<div class="display-third display-center">
+			<img src="java.jpg" alt="Java image" style="width:250px;height:250px;">
+		</div>
+
+		<div class="display-twothird">
+			<h1 id="Java"> Java </h1>
+			<h5 class="padding-36"> When coding in Java, don't trust the programmer! </h5>
+			<p> Java was the first imperative programming language that I learned at
+				University and therefore I feel most comfortable with it. It is an easy
+				to read and understand language, while also being extremely powerful.
+				Right now I am reading Mastering Lambdas: Java Programming in a
+				Multicore World by Maurice Naftalin in order to find out more about
+				the newly introduced functional part of Java and how can you make use
+				of multiple cores for solving problems faster and also using less
+				memory(via streams). </p>
+		</div>
+	</div>
+</div>
+
+<!-- Second Grid of Programming Languages (C/C++) -->
+<div class="row-padding padding-64 container display-light-grey">
+	<div class="content">
+		<div class="display-twothird">
+			<h1 id="C/C++"> C/C++ </h1>
+			<h5 class="padding-36"> When coding in C/C++, trust the programmer! </h5>
+			<p> I first learned C during the final first year group project where we
+				had to write an Emulator and Assembler in C. As an extension to this
+				project, we chose to do a multiplayer baremetal game in order to
+				learn about the RasberryPi's technologies and practice more this
+				powerful language. In highschool I learned C++ and during the 2016
+				summer break I learned the 2nd year lecture notes in order to develop my
+				knowledge. As a learning strategy, I tried to see how I can translate
+				Java code into C++ and therefore learn more easily the differences
+				and advantages of using a language over the other.</p>
+		</div>
+
+		<div class="display-third display-center">
+			<img src="C.jpg" alt="C/C++ image" style="width:250px;height:250px;">
+		</div>
+	</div>
+</div>
+
+<!-- Third Grid of Programming Languages (Python) -->
+<div class="row-padding padding-64 container">
+	<div class="content">
+		<div class="display-third display-center">
+			<img src="python.jpg" alt="Python image" style="width:250px;height:250px;">
+		</div>
+
+		<div class="display-twothird">
+			<h1 id="Python"> Python </h1>
+			<h5 class="padding-36"> The art of making short, concise, readable classes </h5>
+			<p> Python was by far one of the easiest languages to learn, it has a lot
+				of power and most importantly a lot of uses like web development or 3D
+				rendering. I learned this language by myself in the summer of 2016
+				and also learned about unit testing in Python. It is very nice how you
+				can write sometimes 5-10x shorter lines of code compared to other
+				imperative languages like Java.(e.g.: a swap function, or a class
+				where you have multiple constructors due to the number of arguments
+				that are passed to the constructor).</p>
+		</div>
+	</div>
+</div>
+
+<!-- Forth Grid of Programming Languages (HTML/CSS/JavaScript) -->
+<div class="row-padding padding-64 container display-light-grey">
+	<div class="content">
+		<div class="display-twothird">
+			<h1 id="Web"> HTML/CSS/JavaScript </h1>
+			<h5 class="padding-36"> Create your own visual style...let it be unique for
+				yourself and yet identifiable for others. </h5>
+			<p> First time I used HTML and CSS was in first year when my team had to
+				do a website in which we had to include all the research we've done on
+				the interesting topic of Bitcoin. This website was a continuation of
+				this learning process, trying to get some steps forward and get more
+				experience with Web Design and the languages involved. It was meant
+				to be fun, while also doing something productive and usefull. </p>
+		</div>
+
+		<div class="display-third display-center">
+			<img src="web_design.jpg" alt="Web Design image" style="width:250px;height:250px;">
+		</div>
+	</div>
+</div>
+<!-- End of Programming Languages -->
+
+<!-- Project Section-->
+<div id="Projects" class="bgimg5 display-container">
+	<div class="container content display-center padding-64" style="max-width:800px">
+		<h2 id="ARM11EA" class="letters-wide black"> ARM11 Emulator and Assembler </h2>
+		<p class="black"><i> May 2016 </i></p>
+		<p class="justify" style="color:#f1f1f1"> Had to implement an <b>emulator</b>
+			(a program which simulates the execution of an ARM11 file on a Raspberry Pi) and
+			<b>assembler</b>(a program that translates an ARM assembly source file into a
+			binary file that can subsequently be executed by the emulator) using C programming
+			language for a subset of the ARM11 architecture.</p>
+		<div class="row padding-36">
+			<img src="raspberryPi.jpg" style="width:15%">
+		</div>
+
+		<h2 id="ARM11Game" class="letters-wide black"> ARM11 Baremetal Game </h2>
+		<p class="black"><i> May 2016 </i></p>
+		<p class="justify" style="color:#f1f1f1"> This game features graphical output
+			driven by our own software renderer, in combination with controller input, to provide
+			a competitive multiplayer baremetal mini-game experience. It is a simple multiplayer
+			survival arcade game where you have to avoid some obstacle, try to get buffs which
+			appear randomly and stay alive as long as possible.</p>
+		<div class="row padding-36">
+			<img src="logo.png" style="width:15%">
+		</div>
+		<video width="100%" controls>
+			<source src="projectC.mp4" type="video/mp4">
+			Your browser does not support the video
+		</video>
+
+		<h2 id="Bitcoin" class="letters-wide black"> Bitcoin </h2>
+		<p class="black"><i> March 2016 </i></p>
+		<p class="justify" style="color:#f1f1f1"> Did 1 month research about bitcoin and
+			a website in which we integrated everything we've read about this new technology. </p>
+
+		<h2 id="NASA" class="letters-wide black"> Space Settlement Design Contest </h2>
+		<p class="black"><i> May 2014 </i></p>
+		<p class="justify" style="color:#f1f1f1"> Won first price at this design competition
+			sponsored by NASA Ames Research Center. In a team of 7, we analyzed data from many subjects
+			(Chemistry, Computer Science, Biology, etc.) in order to achieve the best design for an
+			orbital space settlement. We went to the International Space Conference in May 2014
+			in Los Angeles to present the project.</p>
+		<div class="row padding-36">
+			<img src="nasa.jpg" style="width:100%">
+		</div>
+	</div>
+</div>
+<!-- End of Project section -->
+
+<!-- Conference Section -->
+<div id="Conferences" class="bgimg6 display-container">
+	<div class="container content display-center">
+		<h2 class="letters-wide black"> ASPIRE ACADEMY </h2>
+		<p class="black"><i> July 2016 </i></p>
+		<p class="justify" style="color:black"> I had the honor and privilege to be selected
+			as a participant for Aspire Academy in July 2016. This program aims to develop the next
+			generation of young leaders and entrepreneurs. This purpose was achieved by ensuring
+			that the programs are delivered by the most proficient and qualified teachers from
+			around the world. The academy managed to bring teachers from Harvard Business School
+			, Princeton and Stanford University, but also some graduates from the above-mentioned.
+			Here we received trainings and sessions on Authentic Leadership Development; Media
+			Training; Design Thinking; Communication and Negotiation; Governance and Public Policy;
+			Strategic Thinking and Business and Ethics.</p>
+		<p class="justify" style="color:black"> This program had a huge impact on my way
+			of thinking, the way I'm taking decisions, interact with other people, any many more. It
+			changed the trajectory of my professional and personal career. One of the main emphasis
+			was on the importance of leaders being open, trying to understand everybody's needs,
+			being vulnerable and using some of their personal stories in order to inspire and empower
+			those around them, and therefore develop as authentic leaders. Other important emphasis
+			was on developing authentic relationships through genuine conversations and interactions,
+			trying to find out as much as you can about a person and learn about them. I remember
+			almost every lecture we had here, but if I were to choose one particular one that stand
+			out for me, I would definitely say the 3 lectures(What it takes to be a leader
+			, Developing your message, Canvassing Speech Writing) held by Professor Steve Jarding
+			(Selected as Harvard Professor of the Year in 2015). All he said was so fascinating, that
+			I even remember now many of his words. He was extremely motivational and gave us some
+			tips and stories which you can hardly forget. From his point of view if you have a speech
+			that anybody else can deliver it, that means your speech is bad and you should change it.
+			Every public speech should include a personal story, a story that makes you connect with
+			the audience instantly, therefore you should always ask yourself before starting to write
+			a speech, which value you want to deliver, make your message count, bring a story that
+			shows values and emotions. A great speech will allow the listener to look inside your
+			heart and soul, not your head. Audiences do not remember words as much as they remember
+			how the speaker made them feel.</p>
+	</div>
+
+	<!-- SlideShow Aspire -->
+	<div class="slideshow-container">
+
+		<div class="mySlides fade">
+			<div class="numbertext">1 / 7</div>
+			<img src="aspireA.jpg" style="width:100%">
+		</div>
+
+		<div class="mySlides fade">
+			<div class="numbertext">2 / 7</div>
+			<img src="aspire.jpg" style="width:100%">
+		</div>
+
+		<div class="mySlides fade">
+			<div class="numbertext">3 / 7</div>
+			<img src="aspire2.jpg" style="width:100%">
+		</div>
+
+		<div class="mySlides fade">
+			<div class="numbertext">4 / 7</div>
+			<img src="aspire4.jpg" style="width:100%">
+		</div>
+
+		<div class="mySlides fade">
+			<div class="numbertext">5 / 7</div>
+			<img src="aspire6.jpg" style="width:100%">
+		</div>
+
+		<div class="mySlides fade">
+			<div class="numbertext">6 / 7</div>
+			<img src="aspire7.jpg" style="width:100%">
+		</div>
+
+		<div class="mySlides fade">
+			<div class="numbertext">7 / 7</div>
+			<img src="aspire8.jpg" style="width:100%">
+		</div>
+
+		<a class="prev" onclick="plusSlides(-1)">❮</a>
+		<a class="next" onclick="plusSlides(1)">❯</a>
+
+	</div>
+
+	<div class="display-center">
+		<span class="dot" onclick="currentSlide(1)"></span>
+		<span class="dot" onclick="currentSlide(2)"></span>
+		<span class="dot" onclick="currentSlide(3)"></span>
+		<span class="dot" onclick="currentSlide(4)"></span>
+		<span class="dot" onclick="currentSlide(5)"></span>
+		<span class="dot" onclick="currentSlide(6)"></span>
+		<span class="dot" onclick="currentSlide(7)"></span>
+	</div>
+	<!-- End of Slideshow Aspire -->
+	<br>
+</div>
+<!-- End of Conference Section -->
+
+<!-- Courses Section -->
+<div id="Courses" class="bgimg7 display-container" style="opacity: 0.8">
+	<br>
+	<table id="ImperialCourses" style="width: 100%">
+		<caption> Imperial College Courses </caption>
+		<tr> <!-- Table row -->
+			<th style="color: blueviolet; font-size: 20px;"> 1st Year </th> <!-- Table header -->
+			<th style="color: blueviolet; font-size: 20px;"> 2nd Year </th>
+			<th style="color: blueviolet; font-size: 20px;"> 3rd Year </th>
+		</tr>
+		<tr>
+			<th> Programming | - Haskell</th> <th></th><th></th>
+		</tr>
+		<tr>
+			<th> Programming || - Java</th> <th></th><th></th>
+		</tr>
+		<tr>
+			<th> Programming ||| - C </th> <th></th><th></th>
+		</tr>
+		<tr>
+			<th> Mathematical Methods </th> <th></th><th></th>
+		</tr>
+		<tr>
+			<th> Discrete Mathematics </th> <th></th><th></th>
+		</tr>
+		<tr>
+			<th> Reasoning about Programs </th> <th></th><th></th>
+		</tr>
+		<tr>
+			<th> Logic </th> <th></th><th></th>
+		</tr>
+		<tr>
+			<th> Database | </th> <th></th><th></th>
+		</tr>
+		<tr>
+			<th> Hardware </th> <th></th><th></th>
+		</tr>
+		<tr>
+			<th> Architecture </th> <th></th><th></th>
+		</tr>
+		<tr>
+			<th> Computing Topics </th> <th></th><th></th>
+		</tr>
+		<tr>
+			<th> Laboratory | </th> <th></th><th></th>
+		</tr>
+		<tr>
+			<th> Ethics in Computing | </th> <th></th><th></th>
+		</tr>
+	</table>
+
+	<div class="container padding-64 row-padding">
+		<div class="content">
+			<div class="display-twothird">
+				<h1 id="3D" class="black"> 3D PRINTING </h1>
+				<h5 class="black"> What you see is what you get </h5>
+				<p class="black padding-36"> In this intensive course made by ECDL for
+					1 week I had the pleasure to learn about this new evolving technology,
+					it's applications, how to draw 3D models and many others. I learned to
+					use CATIA for drawing the 3D model, export it as STL file, check it for
+					errors using Netfab (do an analysis, scale it, cut, change sizes and
+					repair if necessary) and then use Z-Suite (for Zortrax printers)
+					to choose the materials, filament size, etc. I also learned about the
+					basic components of a printer and how it actually works and which is
+					the process the printer has to go throw. It was a very good course
+					from which I achieved a lot of useful skills that I consider very useful
+					for the coming years. In the end, I achieved 95% in the exam. </p>
+			</div>
+
+			<div class="display-third display-center">
+				<img src="3D.jpg" style="width: 350px; height: 350px;">
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End of Courses Section-->
+
+<!-- Third image with Contact text -->
+<div id="Contact" class="bgimg3 display-container">
+	<div class="display-middle">
+		<span class="letters-wide" style="color:#f1f1f1; font-size: 36px;"> CONTACT </span>
+	</div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="padding-64 container display-light-grey">
+	<h3 class="display-center"> WANT TO CONNECT? </h3>
+	<p class="display-center"><em>I'd love to keep in touch! </em></p>
+	<p> Leave me a note: </p>
+	<img src="profile_image_1.jpg" style="width:40%;height: 400px;float:right">
+	<form action="mailto:arthur.niculae96@gmail.com" method="post" enctype="text/plain">
+		<input class="small-input border hover-light-grey" type="text"
+					 placeholder="FirstName">
+		<input class="small-input border hover-light-grey" type="text"
+					 placeholder="LastName">
+		<input type="radio" name="gender" value="male" checked> Male <br>
+		<input type="radio" name="gender" value="female"> Female <br>
+		<input class="small-input border hover-light-grey" type="text" placeholder="Email">
+  <textarea class="border hover-light-grey" rows="7" style="width: 50%"
+						type="text" placeholder="Comment"></textarea></br>
+		<button class="btn display-right section"> SEND </button>
+	</form>
+</div>
+
+<!-- Footer -->
+<footer class="footer-black">
+	<ul class="pagination" style="padding: 13px;">
+		<li><a href="#"> << </a></li>
+		<li><a class="active" href="#"> 1 </a></li>
+		<li><a href="#"> 2 </a></li>
+		<li><a href="#"> 3 </a></li>
+		<li><a href="#"> >> </a></li>
+	</ul>
+	<div class="display-center">Copyright &copy Arthur-Mihai Niculae</div>
+</footer>
+<!-- End of Page Content -->
+
+<!-- Menu toggle script -->
+<script>
+	$("#menu-toggle").click( function (e) {
+		e.preventDefault();
+		$("#wrapper").toggleClass("toggled");
+	});
+</script>
+
+<!-- Get the modal script -->
+<script>
+	var modal = document.getElementById('login');
+	var about = document.getElementById('About');
+
+	// When user clicks anywhere outside of the modal, close it
+	window.onclick = function(event) {
+		if(event.target == modal) {
+			modal.style.display = "none";
+		}
+		if(event.target == about) {
+			about.style.display = "none";
+		}
+	}
+</script>
+
+<!-- Slideshow Script -->
+<script>
+	var slideIndex = 1;
+	showSlides(slideIndex);
+
+	function plusSlides(n) {
+		showSlides(slideIndex += n);
+	}
+
+	function currentSlide(n) {
+		showSlides(slideIndex = n);
+	}
+
+	function showSlides(n) {
+		var i;
+		var slides = document.getElementsByClassName("mySlides");
+		var dots = document.getElementsByClassName("dot");
+
+		if (n > slides.length) {
+			slideIndex = 1;
+		}
+		if (n < 1) {
+			slideIndex = slides.length;
+		}
+
+		for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";
+		}
+		for (i = 0; i < dots.length; i++) {
+			dots[i].className = dots[i].className.replace(" active", "");
+		}
+		slides[slideIndex-1].style.display = "block";
+		dots[slideIndex-1].className += " active";
+	}
+
+	// Automatic Slideshow - change image every 4 seconds
+	var myIndex = 0;
+	showHomeSlides();
+
+	function showHomeSlides()	 {
+		var i;
+		var x = document.getElementsByClassName("homeSlides");
+		for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none";
+		}
+		myIndex++;
+		if (myIndex > x.length) {myIndex = 1}
+		x[myIndex-1].style.display = "block";
+		setTimeout(carousel, 1000);
+	}
+</script>
+
+<script>
+	function getMap() {
+		var map = {
+			center: new google.maps.LatLng(51.508, -0.120850),
+			zoom: 9,
+			mapTypeId: google.maps.MapTypeId.ROADMAP
+		};
+		var map1 = new google.maps.Map(document.getElementById("myMap"), map);
+	}
+</script>
+</body>
+</html>
