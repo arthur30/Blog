@@ -37,6 +37,14 @@
 			<span style="font-size: 30px; cursor: pointer" onclick="changeState()">&#9776</span>
 		</li>
 		<li><a href="#homePhoto" class="padding-large"> HOME </a></li>
+		<li><a href="#About2" class="padding-large"> ABOUT </a></li>
+		<li class="dropdown">
+			<a href="#Courses" class="drop-button padding-large"> COURSES </a>
+			<div class="dropdown-content padding-large display-gray-bg">
+				<a href="#ImperialCourses"> Imperial Courses </a>
+				<a href="#3D"> 3D Printing </a>
+			</div>
+		</li>
 		<li class="dropdown">
 			<a href="#Travels" class="drop-button padding-large"> TRAVELS </a>
 			<div class="dropdown-content padding-large display-gray-bg">
@@ -68,13 +76,6 @@
 			</div>
 		</li>
 		<li><a href="#Conferences" class="padding-large"> CONFERENCES </a></li>
-		<li class="dropdown">
-			<a href="#Courses" class="drop-button padding-large"> COURSES </a>
-			<div class="dropdown-content padding-large display-gray-bg">
-				<a href="#ImperialCourses"> Imperial Courses </a>
-				<a href="#3D"> 3D Printing </a>
-			</div>
-		</li>
 		<li><a href="#Contact" class="padding-large"> CONTACT </a></li>
 		<li class="hide-small">
 			<button class="login-btn padding-large"
@@ -128,13 +129,112 @@
 			<p class="display-center"> This is my personal Blog where you can find
 			information about skills, passions and knowledge. It includes interesting
 			topics like Conferences, Programming Languages and many other. If you
-				want to connect, then leave a message in the Contact section! </p>
+				want to connect, then leave a message in the Contact section! The website
+			was done from scratch, using no libraries and also note that it was done
+				for learning purposes as well. </p>
 		</div>
 	</div>
 </div>
 
 <!-- First image and Welcome message -->
-<img id="homePhoto" class="bgimg1">
+<img id="homePhoto" class="bgimg1 fade">
+
+<!-- About this website -->
+<div id="About2" class="bgimg8 display-container">
+	<div class="display-center padding-xlarge display-black">
+		<h3><b> Welcome to Arthur-Mihai Niculae's Blog!</b></h3>
+		<p> This is my personal Blog where you can find
+			information about skills, passions and knowledge. It includes interesting
+			topics like Conferences, Programming Languages and many other. If you
+			want to connect, then leave a message in the Contact section! The website
+			was done from scratch, using no libraries and also note that it was done
+			for learning purposes as well. </p>
+	</div>
+</div>
+
+<!-- Courses Section -->
+<div id="Courses" class="bgimg7 display-container" style="opacity: 0.8">
+	<br>
+	<table id="ImperialCourses" style="width: 100%">
+		<caption> Imperial College Courses </caption>
+		<tr> <!-- Table row -->
+			<th style="color: blueviolet; font-size: 20px;"> 1st Year </th> <!-- Table header -->
+			<th style="color: blueviolet; font-size: 20px;"> 2nd Year </th>
+			<th style="color: blueviolet; font-size: 20px;"> 3rd Year </th>
+		</tr>
+		<tr>
+			<th> Programming | - Haskell</th>
+			<th> C++ Introduction </th> <th></th>
+		</tr>
+		<tr>
+			<th> Programming || - Java</th>
+			<th> Software Engineering Design </th> <th></th>
+		</tr>
+		<tr>
+			<th> Programming ||| - C </th>
+			<th> Probability and Statistics </th> <th></th>
+		</tr>
+		<tr>
+			<th> Mathematical Methods </th>
+			<th> Compilers </th> <th></th>
+		</tr>
+		<tr>
+			<th> Discrete Mathematics </th>
+			<th> Concurrency </th> <th></th>
+		</tr>
+		<tr>
+			<th> Reasoning about Programs </th>
+			<th> Models of Computation </th> <th></th>
+		</tr>
+		<tr>
+			<th> Logic </th>
+			<th> Team Skills Development </th> <th></th>
+		</tr>
+		<tr>
+			<th> Database | </th> <th></th><th></th>
+		</tr>
+		<tr>
+			<th> Hardware </th> <th></th><th></th>
+		</tr>
+		<tr>
+			<th> Architecture </th> <th></th><th></th>
+		</tr>
+		<tr>
+			<th> Computing Topics </th> <th></th><th></th>
+		</tr>
+		<tr>
+			<th> Laboratory | </th> <th></th><th></th>
+		</tr>
+		<tr>
+			<th> Ethics in Computing | </th> <th></th><th></th>
+		</tr>
+	</table>
+
+	<div class="row-padding container padding-64 display-light-grey">
+		<div class="content">
+			<div class="display-twothird">
+				<h1 id="3D" class="black"> 3D PRINTING </h1>
+				<h5 class="black"> What you see is what you get </h5>
+				<p class="black padding-36"> In this intensive course made by ECDL for
+					1 week I had the pleasure to learn about this new evolving technology,
+					it's applications, how to draw 3D models and many others. I learned to
+					use CATIA for drawing the 3D model, export it as STL file, check it for
+					errors using Netfab (do an analysis, scale it, cut, change sizes and
+					repair if necessary) and then use Z-Suite (for Zortrax printers)
+					to choose the materials, filament size, etc. I also learned about the
+					basic components of a printer and how it actually works and which is
+					the process the printer has to go throw. It was a very good course
+					from which I achieved a lot of useful skills that I consider very useful
+					for the coming years. In the end, I achieved 95% in the exam. </p>
+			</div>
+
+			<div class="display-third display-center">
+				<img src="3D.jpg" style="width:250px;height:250px;">
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End of Courses Section-->
 
 <!-- Second image with My travels -->
 <div id="Travels" class="bgimg2 display-container">
@@ -329,6 +429,7 @@
 
 <!-- Project Section-->
 <div id="Projects" class="bgimg5 display-container">
+
 	<div class="container content display-center padding-64" style="max-width:800px">
 		<h2 id="ARM11EA" class="letters-wide black"> ARM11 Emulator and Assembler </h2>
 		<p class="black"><i> May 2016 </i></p>
@@ -377,7 +478,9 @@
 
 <!-- Conference Section -->
 <div id="Conferences" class="bgimg6 display-container">
-	<div class="container content display-center">
+
+	<!-- Start of Aspire Academy Conference Notes -->
+	<div class="container content display-center padding-64" style="max-width: 800px">
 		<h2 class="letters-wide black"> ASPIRE ACADEMY </h2>
 		<p class="black"><i> July 2016 </i></p>
 		<p class="justify" style="color:black"> I had the honor and privilege to be selected
@@ -411,6 +514,7 @@
 			heart and soul, not your head. Audiences do not remember words as much as they remember
 			how the speaker made them feel.</p>
 	</div>
+	<!-- End of Aspire Academy Conferences Notes -->
 
 	<!-- SlideShow Aspire -->
 	<div class="slideshow-container">
@@ -465,93 +569,83 @@
 		<span class="dot" onclick="currentSlide(7)"></span>
 	</div>
 	<!-- End of Slideshow Aspire -->
+
+	<!-- Start of Microsoft Conferences Notes -->
+	<div class="container content display-center padding-64" style="max-width: 800px">
+		<h2 class="letters-wide black"> MICROSOFT CONFERENCES </h2>
+		<p class="black"><i> 2016-2017 </i></p>
+		<p class="justify" style="color:black">
+			Being an MSP(Microsoft Student Partner) I have to attend conferences held
+			by Microsoft, organise hackatons, host workshops, give demos on campus
+			to students who are interested in technology. Until now I've attended Microsoft
+			Transform and Imagine Cloud conferences and at the end of October I will be
+			travelling to Microsoft headquarters in Reading for a conference organised
+			specifically for MSPs. For instance at these conferences I had the pleasure
+			to learn about interesting topics like Machine Learning(Supervised ML,
+			Unsupervised ML, Reinforcement ML), Artificial Intelligence,
+			Microsoft Cloud and listened to many talks given by excellent engineers.
+			Learned about mind-blowing statistics[example: 2015 - 10ZB data, 2025 - 180ZB
+			(expected)], bot frameworks, deep neural networks for AI, natural language
+			processing, etc.
+		</p>
+	</div>
+	<!-- End of Microsoft Conferences Notes -->
+
+	<!-- Start of Microsoft Conferences Slides -->
+	<div class="slideshow-container">
+
+		<div class="mySlides2 fade">
+			<div class="numbertext"> 1 / 7 </div>
+			<img src="conference1.jpg" style="width: 100%; height: 330px;">
+		</div>
+
+		<div class="mySlides2 fade">
+			<div class="numbertext"> 2 / 7 </div>
+			<img src="conference2.jpg" style="width: 100%">
+		</div>
+
+		<div class="mySlides2 fade">
+			<div class="numbertext"> 3 / 7 </div>
+			<img src="conference3.jpg" style="width: 100%">
+		</div>
+
+		<div class="mySlides2 fade">
+			<div class="numbertext"> 4 / 7 </div>
+			<img src="conference4.jpg" style="width: 100%">
+		</div>
+
+		<div class="mySlides2 fade">
+			<div class="numbertext"> 5 / 7 </div>
+			<img src="conference5.jpg" style="width: 100%">
+		</div>
+
+		<div class="mySlides2 fade">
+			<div class="numbertext"> 6 / 7 </div>
+			<img src="conference6.jpg" style="width: 100%">
+		</div>
+
+		<div class="mySlides2 fade">
+			<div class="numbertext"> 7 / 7 </div>
+			<img src="conference7.jpg" style="width: 100%">
+		</div>
+
+		<a class="prev" onclick="plusSlides2(-1)">❮</a>
+		<a class="next" onclick="plusSlides2(1)">❯</a>
+	</div>
+
+	<div class="display-center">
+		<span class="dot2" onclick="currentSlide2(1)"></span>
+		<span class="dot2" onclick="currentSlide2(2)"></span>
+		<span class="dot2" onclick="currentSlide2(3)"></span>
+		<span class="dot2" onclick="currentSlide2(4)"></span>
+		<span class="dot2" onclick="currentSlide2(5)"></span>
+		<span class="dot2" onclick="currentSlide2(6)"></span>
+		<span class="dot2" onclick="currentSlide2(7)"></span>
+	</div>
+	<!-- End of Microsoft Conferences Slides -->
 	<br>
 </div>
 <!-- End of Conference Section -->
-
-<!-- Courses Section -->
-<div id="Courses" class="bgimg7 display-container" style="opacity: 0.8">
-	<br>
-	<table id="ImperialCourses" style="width: 100%">
-		<caption> Imperial College Courses </caption>
-		<tr> <!-- Table row -->
-			<th style="color: blueviolet; font-size: 20px;"> 1st Year </th> <!-- Table header -->
-			<th style="color: blueviolet; font-size: 20px;"> 2nd Year </th>
-			<th style="color: blueviolet; font-size: 20px;"> 3rd Year </th>
-		</tr>
-		<tr>
-			<th> Programming | - Haskell</th>
-			<th> C++ Introduction </th> <th></th>
-		</tr>
-		<tr>
-			<th> Programming || - Java</th>
-			<th> Software Engineering Design </th> <th></th>
-		</tr>
-		<tr>
-			<th> Programming ||| - C </th>
-			<th> Probability and Statistics </th> <th></th>
-		</tr>
-		<tr>
-			<th> Mathematical Methods </th>
-			<th> Compilers </th> <th></th>
-		</tr>
-		<tr>
-			<th> Discrete Mathematics </th>
-			<th> Concurrency </th> <th></th>
-		</tr>
-		<tr>
-			<th> Reasoning about Programs </th>
-			<th> Models of Computation </th> <th></th>
-		</tr>
-		<tr>
-			<th> Logic </th>
-			<th> Team Skills Development </th> <th></th>
-		</tr>
-		<tr>
-			<th> Database | </th> <th></th><th></th>
-		</tr>
-		<tr>
-			<th> Hardware </th> <th></th><th></th>
-		</tr>
-		<tr>
-			<th> Architecture </th> <th></th><th></th>
-		</tr>
-		<tr>
-			<th> Computing Topics </th> <th></th><th></th>
-		</tr>
-		<tr>
-			<th> Laboratory | </th> <th></th><th></th>
-		</tr>
-		<tr>
-			<th> Ethics in Computing | </th> <th></th><th></th>
-		</tr>
-	</table>
-
-	<div class="container padding-64 row-padding">
-		<div class="content">
-			<div class="display-twothird">
-				<h1 id="3D" class="black"> 3D PRINTING </h1>
-				<h5 class="black"> What you see is what you get </h5>
-				<p class="black padding-36"> In this intensive course made by ECDL for
-					1 week I had the pleasure to learn about this new evolving technology,
-					it's applications, how to draw 3D models and many others. I learned to
-					use CATIA for drawing the 3D model, export it as STL file, check it for
-					errors using Netfab (do an analysis, scale it, cut, change sizes and
-					repair if necessary) and then use Z-Suite (for Zortrax printers)
-					to choose the materials, filament size, etc. I also learned about the
-					basic components of a printer and how it actually works and which is
-					the process the printer has to go throw. It was a very good course
-					from which I achieved a lot of useful skills that I consider very useful
-					for the coming years. In the end, I achieved 95% in the exam. </p>
-			</div>
-
-			<div class="display-third display-center">
-				<img src="3D.jpg" style="width: 350px; height: 350px;">
-			</div>
-		</div>
-	</div>
-</div>
-<!-- End of Courses Section-->
 
 <!-- Third image with Contact text -->
 <div id="Contact" class="bgimg3 display-container">
@@ -644,6 +738,7 @@
 		dots[slideIndex-1].className += " active";
 	}
 
+
 	// Automatic Slideshow - change image every 4 seconds
 	var myIndex = 0;
 	showHomeSlides();
@@ -658,6 +753,41 @@
 		if (myIndex > x.length) {myIndex = 1}
 		x[myIndex-1].style.display = "block";
 		setTimeout(carousel, 1000);
+	}
+</script>
+
+<script>
+	var slideIndex = 1;
+	showSlides2(slideIndex);
+
+	function plusSlides2(n) {
+		showSlides2(slideIndex += n);
+	}
+
+	function currentSlide2(n) {
+		showSlides2(slideIndex = n);
+	}
+
+	function showSlides2(n) {
+		var i;
+		var slides = document.getElementsByClassName("mySlides2");
+		var dots = document.getElementsByClassName("dot2");
+
+		if (n > slides.length) {
+			slideIndex = 1;
+		}
+		if (n < 1) {
+			slideIndex = slides.length;
+		}
+
+		for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";
+		}
+		for (i = 0; i < dots.length; i++) {
+			dots[i].className = dots[i].className.replace(" active", "");
+		}
+		slides[slideIndex-1].style.display = "block";
+		dots[slideIndex-1].className += " active";
 	}
 </script>
 

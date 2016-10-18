@@ -9,7 +9,7 @@ body {
 	margin: 0;
 }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
 	display: block;
 }
 
@@ -102,8 +102,14 @@ body, html {
 
 /* Courses image */
 .bgimg7 {
-	background-image: url('Imperial.jpg');
-	min-height: 900px;
+    background-image: url('Imperial.jpg');
+    min-height: 900px;
+}
+
+/* About image */
+.bgimg8 {
+    background-image: url('aboutWebsite.jpg');
+    min-height: 500px;
 }
 
 /* Turn off scrolling for tablets and mobiles */
@@ -569,7 +575,7 @@ span.psw {
 }
 
 /* The dots/bullets */
-.dot {
+.dot, .dot2 {
 	height: 10px;
 	width: 10px;
 	margin: 0 2px; /* Top+Bottom = 0px; Right+Left = 2px; */
@@ -771,6 +777,10 @@ ul.pagination li a:hover:not(.active) {
 .display-gray-bg {
 	color: #000;
 	background-color: #778899; /* LightSlateGray */
+}
+
+.display-black {
+    background-color: black;
 }
 
 .hover-light-grey:hover, .display-light-grey {
